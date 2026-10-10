@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Air Apex | Official Global Store</title>
+    <link rel="icon" href="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=64&h=64&q=80">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">NIKE</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Featured</a></li>
+            <li><a href="#catalog">Men & Women</a></li>
+            <li><a href="#customizer">Custom Lab</a></li>
+            <li><a href="#sizeguide">Fit Guide</a></li>
+            <li><a href="#tech">Innovation</a></li>
+            <li><a href="#faq">Support</a></li>
+        </ul>
+        <div class="header-actions">
+            <button class="wishlist-btn" id="wishlistBtn">Wishlist (<span id="wishlistCount">0</span>)</button>
+            <button class="cart-btn" id="cartBtn">Bag (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="content-side">
+            <span class="badge" id="badgeText">Nike Air Innovation</span>
+            <h1 id="shoeTitle">Nike Air Max Apex</h1>
+            <div class="price" id="shoePrice">$190.00</div>
+            <p id="shoeDesc">Featuring our revolutionary full-length Air unit and ultralight engineered mesh. Designed for supreme impact absorption, explosive takeoff, and timeless streetwear dominance.</p>
+            
+            <div class="options-container">
+                <span class="option-label">Select Colorway</span>
+                <div class="color-selector">
+                    <div class="color-dot active" data-color="red" data-title="Nike Air Max Apex" data-price="$190.00" data-desc="Featuring our revolutionary full-length Air unit and ultralight engineered mesh. Designed for supreme impact absorption, explosive takeoff, and timeless streetwear dominance." data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80" data-badge="Nike Air Innovation" data-glow="rgba(255, 51, 51, 0.35)"></div>
+                    <div class="color-dot" data-color="blue" data-title="Nike ZoomX Phantom" data-price="$210.00" data-desc="Built with responsive ZoomX foam and dual-chamber pressurized air pockets for elite marathon runners and high-velocity training." data-img="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1200&q=80" data-badge="Pro Running" data-glow="rgba(51, 102, 255, 0.35)"></div>
+                    <div class="color-dot" data-color="yellow" data-title="Nike Jordan Solar Flight" data-price="$220.00" data-desc="Infused with high-impact carbon plates and legendary court-side traction patterns. Stand out with vibrant neon energy." data-img="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80" data-badge="Jordan Series" data-glow="rgba(255, 204, 0, 0.35)"></div>
+                    <div class="color-dot" data-color="black" data-title="Nike Dunk Obsidian Stealth" data-price="$175.00" data-desc="Matte black leather finish paired with dark tinted rubber outsoles for unmatched stealth and urban resilience." data-img="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1200&q=80" data-badge="Streetwear Icon" data-glow="rgba(150, 150, 150, 0.3)"></div>
+                </div>
+            </div>
+
+            <div class="options-container">
+                <span class="option-label">Select Size (US)</span>
+                <div class="size-selector">
+                    <button class="size-btn">8</button>
+                    <button class="size-btn">8.5</button>
+                    <button class="size-btn active">9.5</button>
+                    <button class="size-btn">10.5</button>
+                    <button class="size-btn">11</button>
+                    <button class="size-btn">12</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="buy-now" id="buyBtn">Add To Bag</button>
+                <button class="wish-now" id="wishBtn">Favorite</button>
+            </div>
+        </div>
+
+        <div class="image-side">
+            <div class="glow-bg" id="glowBg"></div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80" alt="Nike Sneaker" class="shoe-img" id="shoeImage">
+            </div>
+        </div>
+    </section>
+
+    <section class="showcase-3d" id="3dview">
+        <div class="section-title">
+            <h2>360 Degree Perspective</h2>
+            <p>Inspect every stitch, curvature, and tread pattern with our interactive angle rotator.</p>
+        </div>
+        <div class="viewer-container">
+            <div class="viewer-box">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80" id="viewerImage" alt="3D Nike View">
+                <div class="angle-indicator" id="angleText">Rotation: 0°</div>
+            </div>
+            <div class="viewer-controls">
+                <button id="rotateLeftBtn">Rotate Left</button>
+                <button id="resetAngleBtn">Reset View</button>
+                <button id="rotateRightBtn">Rotate Right</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+        <div class="section-title">
+            <h2>Explore Iconic Silhouettes</h2>
+            <p>From legendary running sneakers to court-ready icons built for greatness.</p>
+        </div>
+        <div class="catalog-grid">
+            <div class="catalog-card" data-title="Nike Air Max Apex" data-price="$190.00" data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80" alt="Nike Air Max Apex">
+                </div>
+                <h3>Nike Air Max Apex</h3>
+                <p>Full-length Air cushioning & bold red finish.</p>
+                <div class="card-footer-row">
+                    <span class="card-price">$190.00</span>
+                    <button class="quick-add">View Product</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-title="Nike ZoomX Phantom" data-price="$210.00" data-img="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1200&q=80" alt="Nike ZoomX Phantom">
+                </div>
+                <h3>Nike ZoomX Phantom</h3>
+                <p>Hydrodynamic airflow & responsive foam cells.</p>
+                <div class="card-footer-row">
+                    <span class="card-price">$210.00</span>
+                    <button class="quick-add">View Product</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-title="Nike Jordan Solar Flight" data-price="$220.00" data-img="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80" alt="Nike Jordan Solar Flight">
+                </div>
+                <h3>Nike Jordan Solar Flight</h3>
+                <p>High-impact carbon plates & vibrant yellow aesthetic.</p>
+                <div class="card-footer-row">
+                    <span class="card-price">$220.00</span>
+                    <button class="quick-add">View Product</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-title="Nike Dunk Obsidian Stealth" data-price="$175.00" data-img="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1200&q=80" alt="Nike Dunk Obsidian Stealth">
+                </div>
+                <h3>Nike Dunk Obsidian Stealth</h3>
+                <p>Matte black leather finish with maximum grip.</p>
+                <div class="card-footer-row">
+                    <span class="card-price">$175.00</span>
+                    <button class="quick-add">View Product</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-title="Nike Pegasus Trail Pro" data-price="$160.00" data-img="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1200&q=80" alt="Nike Pegasus Trail Pro">
+                </div>
+                <h3>Nike Pegasus Trail Pro</h3>
+                <p>All-terrain grip built for rugged outdoor tracks.</p>
+                <div class="card-footer-row">
+                    <span class="card-price">$160.00</span>
+                    <button class="quick-add">View Product</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-title="Nike Blazer Mid Vintage" data-price="$140.00" data-img="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-img-box">
+                    <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80" alt="Nike Blazer Mid Vintage">
+                </div>
+                <h3>Nike Blazer Mid Vintage</h3>
+                <p>Retro high-top court heritage with suede accents.</p>
+                <div class="card-footer-row">
+                    <span class="card-price">$140.00</span>
+                    <button class="quick-add">View Product</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customizer" id="customizer">
+        <div class="section-title">
+            <h2>Nike By You Custom Lab</h2>
+            <p>Customize your materials, cushioning, and accents to calculate your custom price instantly.</p>
+        </div>
+        <div class="customizer-box">
+            <div class="customizer-controls">
+                <div class="custom-group">
+                    <label>Upper Material</label>
+                    <select id="materialSelect">
+                        <option value="0">Engineered Breathable Mesh (Standard)</option>
+                        <option value="30">Premium Flyknit Weave (+$30.00)</option>
+                        <option value="45">Gore-Tex Weatherproof Shield (+$45.00)</option>
+                    </select>
+                </div>
+                <div class="custom-group">
+                    <label>Midsole Cushioning</label>
+                    <select id="soleSelect">
+                        <option value="0">Standard Air Max Unit (Included)</option>
+                        <option value="40">ZoomX Energy Return Foam (+$40.00)</option>
+                        <option value="55">Carbon Fiber Speed Plate (+$55.00)</option>
+                    </select>
+                </div>
+                <div class="custom-group">
+                    <label>Swoosh Accent Type</label>
+                    <select id="laceSelect">
+                        <option value="0">Classic Embroidered Swoosh</option>
+                        <option value="15">Reflective Metallic Swoosh (+$15.00)</option>
+                        <option value="25">Glow-In-The-Dark Neon Trim (+$25.00)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="customizer-summary">
+                <h3>Custom Build Total</h3>
+                <div class="custom-price" id="customTotalPrice">$190.00</div>
+                <button id="applyCustomBtn">Add Custom Pair To Bag</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sizeguide" id="sizeguide">
+        <div class="section-title">
+            <h2>Nike Footwear Size Guide</h2>
+            <p>Find your precise measurements across US, UK, and European standards.</p>
+        </div>
+        <div class="size-table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>US Size</th>
+                        <th>UK Size</th>
+                        <th>EU Size</th>
+                        <th>Foot Length</th>
+                    </tr>
+                </thead>
+                <tbody id="sizeTableBody">
+                    <tr><td>7.0</td><td>6.0</td><td>40</td><td>25.0 cm</td></tr>
+                    <tr><td>8.0</td><td>7.0</td><td>41</td><td>25.8 cm</td></tr>
+                    <tr><td>9.0</td><td>8.0</td><td>42.5</td><td>26.5 cm</td></tr>
+                    <tr class="highlighted-row"><td>9.5</td><td>8.5</td><td>43</td><td>27.1 cm</td></tr>
+                    <tr><td>10.5</td><td>9.5</td><td>44.5</td><td>28.0 cm</td></tr>
+                    <tr><td>11.5</td><td>10.5</td><td>45.5</td><td>28.8 cm</td></tr>
+                    <tr><td>12.5</td><td>11.5</td><td>47</td><td>29.5 cm</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="tech-section" id="tech">
+        <div class="section-title">
+            <h2>Nike Air & Zoom Innovation</h2>
+            <p>Engineered for athletes who demand maximum performance and zero compromises.</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-icon">💨</div>
+                <h3>Nike Air Technology</h3>
+                <p>Pressurized air encased in a durable membrane provides lightweight cushioning that absorbs impact on every stride.</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">⚡</div>
+                <h3>ZoomX Propulsion</h3>
+                <p>Delivers Nike's highest energy return ever, turning your vertical impact into forward momentum.</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🛡️</div>
+                <h3>Flywire Lockdown</h3>
+                <p>Ultralight high-strength cables work with the laces to wrap your midfoot securely in place.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about Nike orders, shipping, and member returns.</p>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <div class="faq-question">How does Nike Member shipping work? <span>+</span></div>
+                <div class="faq-answer">Nike Members enjoy free standard shipping on orders over $50 and expedited delivery options at checkout.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What is the Nike 30-day return policy? <span>+</span></div>
+                <div class="faq-answer">You can return items for any reason within 30 days, no questions asked, even if you have tested them outdoors.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Are Nike By You custom shoes returnable? <span>+</span></div>
+                <div class="faq-answer">Yes! Custom sneakers created in our lab carry the exact same 30-day satisfaction guarantee.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo">NIKE</div>
+                <p>Bring inspiration and innovation to every athlete in the world. If you have a body, you are an athlete.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Find A Store</h4>
+                <ul>
+                    <li><a href="#hero">Featured Drops</a></li>
+                    <li><a href="#catalog">Men's Collection</a></li>
+                    <li><a href="#catalog">Women's Collection</a></li>
+                    <li><a href="#customizer">Nike By You</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Nike Updates</h4>
+                <p>Be the first to know about limited drops, sales, and member exclusives.</p>
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Email address" id="newsletterInput">
+                    <button id="newsletterBtn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 Nike, Inc. All Rights Reserved.</div>
+            <div>Authorized Global Store.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
